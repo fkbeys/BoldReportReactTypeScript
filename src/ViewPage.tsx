@@ -26,6 +26,11 @@ const ViewPage = () => {
         nullable: false
     }];
 
+    var parameterSettings = {
+        hideParameterBlock: true
+    }
+
+
     return (
 
         <div style={viewerStyle}>
@@ -34,6 +39,7 @@ const ViewPage = () => {
                 reportServiceUrl={'http://130.0.9.2:7100/Viewer'}
                 parameters={parameters}
                 reportPath={'abi.rdl'}
+                parameterSettings={parameterSettings}
             >
             </BoldReportViewerComponent>
         </div>
